@@ -1,0 +1,15 @@
+.signup {
+  height: 60%;
+}
+.signup form {
+  height: 62%;
+}
+.signup form input {
+  height: 20%;
+}
+.signup form button {
+  height: 20%;
+}
+.signup .terms {
+  text-align: center;
+}

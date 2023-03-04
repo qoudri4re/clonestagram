@@ -1,0 +1,6 @@
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 18% 82%;
+  position: relative;
+}
