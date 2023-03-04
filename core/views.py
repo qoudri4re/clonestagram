@@ -4,14 +4,15 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 import jwt
 import datetime
-from dotenv import dotenv_values
-config = dotenv_values(".env")
-
-JWT_KEY = config['JWT_KEY']
-print(config['SECRET_KEY'])
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
-@api_view(["POST"])
+JWT_KEY = os.getenv('SECRET_KEY')
+
+
+@ api_view(["POST"])
 def signup(request):
     username = request.data['username']
     email = request.data['email']
