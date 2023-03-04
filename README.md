@@ -61,7 +61,7 @@ If you'd like to contribute to the project, please fork the repository and creat
 
 ## Contact Information
 
-For questions or support, please contact the project maintainer at [abdulqodrioladimeji@gmail.com.com](abdulqodrioladimeji@gmail.com).
+For questions or support, please contact the project maintainer at [abdulqodrioladimeji@gmail.com](abdulqodrioladimeji@gmail.com).
 
 ## Acknowledgments
 
