@@ -8,6 +8,7 @@ from dotenv import dotenv_values
 config = dotenv_values(".env")
 
 JWT_KEY = config['JWT_KEY']
+print(config['SECRET_KEY'])
 
 
 @api_view(["POST"])
