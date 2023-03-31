@@ -349,3 +349,51 @@
 .single__comment .single__comment__bottom .dont__display {
   display: none;
 }
+.modal .create__post {
+  background-color: rgb(255, 255, 255);
+  height: 70%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.create__post .create__post__header {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create__post .create__post__body {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create__post .create__post__content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.create__post .create__post__content button:hover {
+  background-color: rgb(24, 119, 246);
+}
+.create__post .create__post__content button {
+  background-color: rgb(0, 149, 246);
+  color: rgb(255, 255, 255);
+  width: 45%;
+  border: none;
+  height: 15%;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.create__post .create__post__content p {
+  color: rgb(38, 38, 38);
+  font-size: 1.2rem;
+}

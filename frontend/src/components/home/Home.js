@@ -78,7 +78,7 @@ function Home() {
   if (userDetails) {
     return (
       <div className="home">
-        <Sidebar where="home" />
+        <Sidebar where="home" toogleDisplayModal={toogleDisplayModal} />
         <MainContent
           userDetails={userDetails}
           setUserDetails={setUserDetails}

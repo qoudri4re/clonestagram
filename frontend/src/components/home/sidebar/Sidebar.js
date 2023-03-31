@@ -3,7 +3,7 @@ import "./sidebar.css";
 import SidebarWithoutOverlay from "./SidebarWithoutOverlay";
 import SidebarWithOverlay from "./SidebarWithOverlay";
 
-function Sidebar({ where }) {
+function Sidebar({ where, toogleDisplayModal }) {
   const [displaySearchOverLay, setDisplaySearhOverlay] = useState(false);
   const [displayNotificationOverLay, setDisplayNotificationOverLay] =
     useState(false);
@@ -40,6 +40,7 @@ function Sidebar({ where }) {
           where={where}
           displayOrHideMore={displayOrHideMore}
           displayMoreOverlay={displayMoreOverlay}
+          toogleDisplayModal={toogleDisplayModal}
         />
       </div>
     );
@@ -53,6 +54,7 @@ function Sidebar({ where }) {
           where={where}
           displayOrHideMore={displayOrHideMore}
           displayMoreOverlay={displayMoreOverlay}
+          toogleDisplayModal={toogleDisplayModal}
         />
       </div>
     );
@@ -65,6 +67,7 @@ function Sidebar({ where }) {
           displayOrHideMore={displayOrHideMore}
           displayMoreOverlay={displayMoreOverlay}
           where={where}
+          toogleDisplayModal={toogleDisplayModal}
         />
       </div>
     );
@@ -77,6 +80,7 @@ function Sidebar({ where }) {
           where={where}
           displayOrHideMore={displayOrHideMore}
           displayMoreOverlay={displayMoreOverlay}
+          toogleDisplayModal={toogleDisplayModal}
         />
       </div>
     );

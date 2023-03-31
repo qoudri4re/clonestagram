@@ -17,6 +17,7 @@ function SidebarWithoutOverlay({
   displayOrHideMore,
   where,
   displayMoreOverlay,
+  toogleDisplayModal,
 }) {
   return (
     <>
@@ -52,7 +53,7 @@ function SidebarWithoutOverlay({
             Notifications
           </p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => toogleDisplayModal("create post")}>
           <img src={create_icon} alt="" />
           <p className={where === "create" ? "current__nav" : ""}>Create</p>
         </div>

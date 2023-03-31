@@ -3,6 +3,7 @@ import "./modals.css";
 import PostOptionsModal from "./PostOptionsModal";
 import UnfollowModal from "./UnfollowModal";
 import ReportComment from "./postModals/ReportComment";
+import CreatePost from "./CreatePost";
 
 function Modal({
   modal,
@@ -44,6 +45,12 @@ function Modal({
           commentId={commentId}
           toogleDisplayModal={toogleDisplayModal}
         />
+      </div>
+    );
+  } else if (modal === "create post") {
+    return (
+      <div className="modal">
+        <CreatePost />
       </div>
     );
   }

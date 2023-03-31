@@ -21,6 +21,7 @@ function SidebarWithOverlay({
   displayMoreOverlay,
   displayOrHideMore,
   where,
+  toogleDisplayModal,
 }) {
   return (
     <div className="sidebar__with__overlay">
@@ -55,7 +56,7 @@ function SidebarWithOverlay({
         >
           <img src={notification_icon} alt="" />
         </div>
-        <div className="item">
+        <div className="item" onClick={() => toogleDisplayModal("create post")}>
           <img src={create_icon} alt="" />
         </div>
         <div className="item profile__picture">
