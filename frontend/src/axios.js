@@ -1,6 +1,12 @@
 import axios from "axios";
 
-let baseURL = "http://127.0.0.1:8000/";
+let baseURL;
+
+if (process.env.REACT_APP_ENVIRONMENT === "development") {
+  baseURL = "http://127.0.0.1:8000/";
+} else {
+  baseURL = "https://clonestagram-api.onrender.com";
+}
 
 const client = axios.create({
   baseURL,
